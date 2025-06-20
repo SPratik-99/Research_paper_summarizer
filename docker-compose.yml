@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  summarizer:
+    build: .
+    environment:
+      - OLLAMA_HOST=ollama:11434
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SERPAPI_API_KEY=${SERPAPI_API_KEY}
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./outputs:/app/outputs
+    depends_on:
+      - ollama
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+volumes:
+  ollama_data:

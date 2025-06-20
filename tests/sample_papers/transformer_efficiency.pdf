@@ -1,0 +1,15 @@
+# Efficient Transformers for Long Sequences
+**Authors**: Smith et al. (2024)
+
+## Abstract
+We propose FlashAttention-3, a novel attention mechanism reducing memory usage by 73% while maintaining 99% accuracy...
+
+## Methodology
+- Sparse attention patterns
+- Gradient checkpointing
+- Mixed-precision training
+
+## Results
+- 5.2x faster training
+- 73% memory reduction
+- 99.1% accuracy on GLUE
