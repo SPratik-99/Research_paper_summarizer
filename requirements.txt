@@ -1,5 +1,5 @@
-gpt-researcher
-openai
+gpt-researcher==0.14.0        # latest stable version as 0.0.5 doesn't exist
+openai                        # installs the latest OpenAI SDK
 ollama==0.1.16
 fastapi==0.110.0
 uvicorn==0.29.0
@@ -8,4 +8,4 @@ requests==2.32.0
 speechbrain==0.5.16
 torchaudio==2.2.1
 pytest==8.1.1
-pypdf2==3.0.1
+PyPDF2==3.0.1                 # Capitalization matters; use correct package name
