@@ -1,6 +1,6 @@
-gpt-researcher==0.14.0        # latest stable version as 0.0.5 doesn't exist
-openai                        # installs the latest OpenAI SDK
-ollama==0.1.16
+gpt-researcher==0.14.0
+openai
+ollama==0.5.1
 fastapi==0.110.0
 uvicorn==0.29.0
 python-dotenv==1.0.1
